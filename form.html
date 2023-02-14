@@ -1,7 +1,7 @@
 <html>
     <body>
         <h2>Normal From</h2>
-        <form>
+        <form action="file:///C:/Users/vishw/Desktop/html/first.html">
             <label for="fname">Your Name</label><br>
             <input type="text" id="fname" name="fname" ><br>
             <label for="lname">Last Name</label><br>
@@ -24,7 +24,19 @@
             <input type="checkbox" id="bat" name="fav_item" value="Bat">
             <label for="bat">Bat</label>
             <input type="checkbox" id="shoes" name="fav_item" value="Shoes">
-            <label for="shoes">Shoes</label>
+            <label for="shoes">Shoes</label><br>
+            <p>Select your country:</p>
+            <select id="country" name="country" >
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="Japan">Japan</option>
+              </select>
+              <br>
+              <p>Please enter your feedback here</p>
+              <textarea name="feedback" rows="10" cols="30"></textarea>
+            <p> Click below to submit the form</p>
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
