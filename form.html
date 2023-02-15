@@ -1,7 +1,8 @@
 <html>
     <body>
-        <h2>Normal From</h2>
-        <form action="file:///C:/Users/vishw/Desktop/html/first.html">
+        <h2>Normal Form</h2>
+        <form action="file:///C:/Users/vishw/Desktop/html/first.html" 
+        oninput="sum.value=parseInt(A.value)+parseInt(B.value)">
             <label for="fname">Your Name</label><br>
             <input type="text" id="fname" name="fname" ><br>
             <label for="lname">Last Name</label><br>
@@ -18,6 +19,8 @@
             <input type="radio" id="no" name="no">
             <label for="fav_sport">No </label>
             <br>
+            <fieldset >
+                <legend>Favourite Equipments</legend>
             <p>Please check mark your fav things</p>
             <input type="checkbox" id="ball" name="fav_item" value="Ball">
             <label for="ball">Ball</label>
@@ -25,18 +28,43 @@
             <label for="bat">Bat</label>
             <input type="checkbox" id="shoes" name="fav_item" value="Shoes">
             <label for="shoes">Shoes</label><br>
+            </fieldset>
             <p>Select your country:</p>
             <select id="country" name="country" >
                 <option value="India">India</option>
                 <option value="USA">USA</option>
                 <option value="Russia">Russia</option>
                 <option value="Japan">Japan</option>
-              </select>
+              </select><br>
+              <p>Enter your age:</p>
+              <input list="age" name="age">
+              <datalist id="age">
+                <option value="20">
+                <option value="21">
+                <option value="22">
+                <option value="23">
+                <option value="24">
+            </datalist>
               <br>
               <p>Please enter your feedback here</p>
               <textarea name="feedback" rows="10" cols="30"></textarea>
+            <br><br>
+            <button type="button" onclick="alert('Welcome')">Click Me!</button>
+            <br>
+            <fieldset>
+                <legend>Output Element Example</legend>
+                <input type="number" name="A" value="20">
+                <input type="number" name="B" value="30">
+                Result:<output name="sum" for="A B"></output>
+            </fieldset>
+            <br>
+            <p>Enter submission date:</p>
+            <input type="date" id="submit" name="submit">
+            
+            
             <p> Click below to submit the form</p>
             <input type="submit" value="Submit">
+            <input type="reset">
         </form>
     </body>
 </html>
