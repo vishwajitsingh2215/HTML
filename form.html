@@ -59,7 +59,20 @@
             </fieldset>
             <br>
             <p>Enter submission date:</p>
-            <input type="date" id="submit" name="submit">
+            <input type="datetime-local" id="submit" name="submit">
+            <label for="appt">&emsp;Select a time:</label>
+            <input type="time" id="appt" name="appt">
+            <label for="email">Enter your mail ID:</label>
+            <input type="email" id="email" name="email">
+            <label for="phone">Enter your phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="012-3456-789" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"> 
+            <input type="hidden" id="mailId" name="mailId" value="3005"> <br>
+            Upload your file:<input type="file" id="myfile" name="myfile">
+            <label for="quantity">Quantity:</label>
+         <input type="number" id="quantity" name="quantity" min="0" max="100" step="10">
+         <br>
+         <p>Rate the page on the scale of 10</p>
+         <input type="range" id="rate" name="rate" min="0" max="10">
             
             
             <p> Click below to submit the form</p>
