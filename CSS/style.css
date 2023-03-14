@@ -1,24 +1,79 @@
-
-
-  div:hover {  display:block;
-               margin:auto;
-              border:auto;
-             padding-top: 50px;
-              padding-bottom: 50px;
-      background-color: lightblue;
-      border-style:outset;
-            }
-  body{background-color:lightgreen}
-  p{color:black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em; }
-  *{text-align:center;}
-  p.outline {outline-style:dotted;
-             outline-color:whitesmoke;}
-  .img-container{ 
-    box-sizing:border-box;
-    float: right;
-    width: 33.33%; 
-    padding: 5px;
+body {
+   background-color: hsl(120,30%,50%);
   }
-   
+ 
+
+ p {
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1em;
+ }
+
+ * {
+   text-align: center;
+ }
+
+ p.outline {
+   outline-style: dotted;
+   outline-color: whitesmoke;
+ }
+
+ .img-container {
+  filter: drop-shadow(8px 8px 10px gray);
+   box-sizing: border-box;
+   float: right;
+   width: 33.33%;
+   padding: 5px;
+ }
+
+ .img-container:hover {
+  display: block;
+  margin: auto;
+  border: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: lightblue;
+  border-style: outset;
+  scale: 1.0;
+  transition:  0.8s;
+  
+  
+}
+.navbar a{ 
+  text-decoration: none;
+  width: 100px;
+  display:inline-block;
+  color: white;
+  padding: 10px 0 12px 0;
+}
+.navbar{
+  background-color: grey;
+  
+  height: 40px;
+
+}
+.navbar a:hover{ 
+  background-color: hsl(120,30%,50%);
+
+}
+.list{
+  list-style:none;
+  column-count: 4;
+  column-gap:1em;
+}
+.container{
+  display: grid;
+    grid-template-columns: 5em 86px 86px;
+    grid-template-rows: 50% auto;
+    gap: 11px;
+    background-color: grey;
+    padding: 9px;
+    max-width: fit-content;
+}
+.elements{
+  display:flex;
+  align-items:centre;
+  justify-content:centre;
+}
+
+
